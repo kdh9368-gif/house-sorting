@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>마법학교 기숙사 배정식</title>
+<title>송그와트 마법학교 기숙사 배정식</title>
 <style>
 :root{--bg:#070910;--panel:#111522e8;--gold:#d8b56a;--gold2:#f4dda2;--text:#f6f0e5;--muted:#b9b4aa}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 15%,#251d3c 0,#0b0e18 35%,#05070d 80%);color:var(--text);font-family:Georgia,"Noto Serif KR",serif}
@@ -17,8 +17,8 @@ button{width:100%;margin-top:14px;padding:15px;border:1px solid var(--gold);bord
 .rune{font-size:42px;color:var(--gold);animation:spin 4s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.house{font-size:clamp(36px,10vw,58px);color:var(--gold2);margin:8px}.housecrest{font-size:90px}.quote{color:#d7d0c3;line-height:1.8}.small{color:#8e8d93;font-size:12px}
 @media(max-width:430px){.app{padding:10px}.card{padding:28px 17px;min-height:650px;display:flex;flex-direction:column;justify-content:center}.question{font-size:21px}}
 </style></head><body><div class="app">
-<section id="start" class="screen active"><div class="card"><div class="crest">✦</div><div class="kicker">THE GREAT HOUSE CEREMONY</div><h1>마법학교<br>기숙사 배정식</h1><p class="lead">명부를 확인한 뒤 마법모자의 네 가지 질문에 답해주세요.<br>답변은 분위기를 위한 의식이며, 기숙사는 미리 정해진 명부에 따라 공개됩니다.</p>
-<div class="field"><label>학번</label><input id="studentId" inputmode="numeric" placeholder="학번을 입력하세요" autocomplete="off"></div>
+<section id="start" class="screen active"><div class="card"><div class="crest">✦</div><div class="kicker">AJOU UNIVERSITY MEDICAL SCHOOL FESTIVAL</div><h1>송그와트 마법학교<br>기숙사 배정식</h1><p class="lead">학번과 이름을 입력한 뒤 마법모자의 네 가지 질문에 답해주세요.</p>
+<div class="field"><label>학번</label><input id="studentId" inputmode="numeric" placeholder="학번을 입력하세요 (ex. 2026xxxxx)" autocomplete="off"></div>
 <div class="field"><label>이름</label><input id="name" placeholder="이름을 입력하세요" autocomplete="off"></div><div id="error" class="error"></div><button onclick="begin()">입학식 시작</button></div></section>
 <section id="intro" class="screen"><div class="card"><div class="hat">🎩</div><div class="kicker">THE SORTING HAT</div><h2 id="hello"></h2><p class="lead">마법모자가 당신을 살펴봅니다.<br>네 가지 질문에 솔직하게 답해주세요.</p><button onclick="nextQuestion()">마법모자 쓰기</button></div></section>
 <section id="quiz" class="screen"><div class="card"><div class="qno" id="qno"></div><div class="question" id="qtext"></div><div class="options" id="options"></div></div></section>
